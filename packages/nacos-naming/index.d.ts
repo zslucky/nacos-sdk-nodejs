@@ -22,7 +22,7 @@ interface SubscribeInfo {
  * Nacos服务发现组件
  */
 export class NacosNamingClient {
-  constructor (config: { logger: typeof console, serverList: string | string[], namespace?: string })
+  constructor(config: { logger: any, serverList: string | string[], namespace?: string })
 
   ready: () => Promise<void>;
   // Register an instance to service
